@@ -1,0 +1,143 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4309,        135]
+NotebookOptionsPosition[      3412,        101]
+NotebookOutlinePosition[      3755,        116]
+CellTagsIndexPosition[      3712,        113]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Modeling", " ", "a", " ", "Tennis", " ", "Racquet"}], 
+  "Title"]], "Input",
+ CellChangeTimes->{{3.7979463338962755`*^9, 3.797946336998512*^9}}],
+
+Cell["Margaret Trautner | 18.303 | Spring 2020 (rip) | MIT", "Subsubsection",
+ CellChangeTimes->{{3.797946361519331*^9, 3.7979463856699743`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Part I: Dynamic Beam Equation", "Section",
+ CellChangeTimes->{{3.7979464024839115`*^9, 3.7979464125354695`*^9}}],
+
+Cell["\<\
+As a first approximation to what happens to a tennis racket upon impact by a \
+tennis ball, we will model the tennis racket as a beam with uniform density, \
+uniform Young\[CloseCurlyQuote]s modulus, and uniform shape (and thus uniform \
+second moment of area) along the beam. The equation describing the behavior \
+of a beam under no tension is \
+\>", "Text",
+ CellChangeTimes->{{3.7979464147860956`*^9, 3.7979464335728245`*^9}, {
+  3.797946483353221*^9, 3.7979465242543755`*^9}, {3.797946746387574*^9, 
+  3.7979468094711103`*^9}}],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.797946973966921*^9, 3.797946992268512*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Derivation, solving the equation", "Subitem",
+ CellChangeTimes->{{3.7979593591627216`*^9, 3.797959369446398*^9}}],
+
+Cell["Show the different modes figure", "Subitem",
+ CellChangeTimes->{{3.7979593591627216`*^9, 3.797959374205144*^9}}],
+
+Cell[TextData[{
+ "Show the animation for the initial condition of y = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "3"], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Subitem",
+ CellChangeTimes->{{3.7979593591627216`*^9, 3.7979593883282137`*^9}}]
+}, Open  ]],
+
+Cell["\<\
+Obviously, this doesn\[CloseCurlyQuote]t model a tennis racket super well. \
+The tennis racket does is definitely not a beam of constant area, Young\
+\[CloseCurlyQuote]s modulus, and density. We will come back to this later. \
+\>", "Text",
+ CellChangeTimes->{{3.797959405679495*^9, 3.797959415431161*^9}, {
+  3.79795947598283*^9, 3.797959501745617*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Part II: 2D Wave Equation on an \[OpenCurlyDoubleQuote]Egg\
+\[CloseCurlyDoubleQuote]", "Section",
+ CellChangeTimes->{{3.797959505353507*^9, 3.797959526295128*^9}}],
+
+Cell["What about ", "Text",
+ CellChangeTimes->{{3.7979595298788676`*^9, 3.797959532165495*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.797947049470484*^9, 3.797947050236467*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7979469699147425`*^9, 3.7979469708424306`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.797946960745309*^9, 3.797946968071325*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7979468863825607`*^9, 3.79794688699552*^9}}],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.797946828926823*^9, 3.7979468349754972`*^9}, {
+  3.7979468821744404`*^9, 3.797946883748549*^9}}]
+}, Open  ]]
+},
+WindowSize->{1280, 637},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 180, 4, 66, "Input"],
+Cell[741, 26, 145, 1, 34, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[911, 31, 118, 1, 49, "Section"],
+Cell[1032, 34, 542, 9, 49, "Text"],
+Cell[1577, 45, 82, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[1684, 50, 119, 1, 25, "Subitem"],
+Cell[1806, 53, 118, 1, 25, "Subitem"],
+Cell[1927, 56, 264, 7, 27, "Subitem"]
+}, Open  ]],
+Cell[2206, 66, 363, 6, 30, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2606, 77, 169, 2, 63, "Section"],
+Cell[2778, 81, 95, 1, 30, "Text"],
+Cell[2876, 84, 92, 1, 30, "Input"],
+Cell[2971, 87, 96, 1, 30, "Input"],
+Cell[3070, 90, 92, 1, 30, "Input"],
+Cell[3165, 93, 93, 1, 30, "Input"],
+Cell[3261, 96, 135, 2, 30, "Text"]
+}, Open  ]]
+}
+]
+*)
+
